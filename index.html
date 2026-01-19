@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ostamyy - Mainonnan ammattilaiset</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo">Ostamyy</div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a href="index.html">Etusivu</a>
+      <a href="hinnasto.html">Hinnasto</a>
+      <a href="tietoa.html">Tietoa meistä</a>
+      <a href="yhteystiedot.html">Yhteystiedot</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Mainonnan ammattilaiset verkossa</h1>
+  <p>Ostamyy tarjoaa tehokkaita ja kohdennettuja mainospalveluita, jotka auttavat yrityksiä kasvamaan ja saavuttamaan näkyvyyttä sosiaalisessa mediassa.</p>
+  <a href="hinnasto.html" class="btn">Katso hinnasto</a>
+</section>
+
+<section class="palvelut">
+  <div class="container">
+    <h2>Palvelumme</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Verkkosivujen luonti</h3>
+        <p>Ammattimaisen verkkosivun suunnittelu ja toteutus yrityksellesi</p>
+        <div class="price">250€ (sis. ALV)</div>
+      </div>
+      <div class="card">
+        <h3>Some-mainospaketit</h3>
+        <ul>
+          <li>Peruspaketti 39,90€/vko</li>
+          <li>Tehopaketti 59,90€/vko</li>
+          <li>Kuukausipaketti 139€/kk</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Ostamyy — Kaikki oikeudet pidätetään</p>
+</footer>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if(menu.style.display === "flex") { menu.style.display = "none"; }
+  else { menu.style.display = "flex"; }
+}
+</script>
+
+</body>
+</html>
